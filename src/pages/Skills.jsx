@@ -1,32 +1,35 @@
-
 function Skills() {
+  const skills = [
+    { name: "JavaScript (React, Node.js)", level: "Advanced", icon: "💻" },
+    { name: "Tailwind CSS", level: "Proficient", icon: "🎨" },
+    { name: "Express.js", level: "Intermediate", icon: "🚀" },
+    { name: "SQL", level: "Intermediate", icon: "🗄️" },
+    { name: "Git", level: "Proficient", icon: "🔀" },
+    { name: "Problem Solving", level: "Expert", icon: "🧩" },
+    { name: "Team Collaboration", level: "Advanced", icon: "👥" },
+    { name: "Agile Methodologies", level: "Proficient", icon: "🔄" },
+    { name: "Project Management", level: "Intermediate", icon: "📊" },
+    { name: "Continuous Learning", level: "Expert", icon: "📚" },
+  ];
+
+  const SkillItem = ({ name, level, icon }) => (
+    <div className="flex items-center mb-2 p-2 bg-background rounded-lg shadow-sm">
+      <span className="mr-2 text-xl">{icon}</span>
+      <span className="text-sm text-gray-800">{name}</span>
+      <span className="ml-auto text-xs text-indigo-600">{level}</span>
+    </div>
+  );
+
   return (
-    <div className="flex flex-col items-center justify-center h-full">
-      <h1 className="text-3xl font-bold mb-4">Skills</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-        <div className="p-4 rounded-lg">
-          <h2 className="text-xl font-bold mb-2">Technical Skills</h2>
-          <ul className="list-disc list-inside">
-            <li>JavaScript (React, Node.js)</li>
-            <li>Tailwind</li>
-            <li>Express</li>
-            <li>SQL</li>
-            <li>Git</li>
-          </ul>
-        </div>
-        <div className="p-4 rounded-lg">
-          <h2 className="text-xl font-bold mb-2">Soft Skills</h2>
-          <ul className="list-disc list-inside">
-            <li>Problem Solving</li>
-            <li>Team Collaboration</li>
-            <li>Agile Methodologies</li>
-            <li>Project Management</li>
-            <li>Continuous Learning</li>
-          </ul>
-        </div>
+    <div className="flex flex-col items-center justify-center h-full p-6">
+      <h1 className="text-3xl font-bold mb-6 text-indigo-600">My Skills</h1>
+      <div className="w-full max-w-4xl grid grid-cols-2 gap-4">
+        {skills.map((skill, index) => (
+          <SkillItem key={index} name={skill.name} level={skill.level} icon={skill.icon} />
+        ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default Skills
+export default Skills;
