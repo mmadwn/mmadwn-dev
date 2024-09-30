@@ -8,7 +8,7 @@ function Header() {
       </div>
 
       <nav>
-        <ul className="flex gap-4">
+        <ul className="flex flex-wrap gap-4 justify-center">
           <li>
             <Link to="/about">About</Link>
           </li>

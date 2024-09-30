@@ -20,12 +20,12 @@ function Home() {
   }, []);
 
   return (
-    <div className="flex items-center justify-center h-full">
-      <div className="mr-8">
+    <div className="flex flex-col md:flex-row items-center justify-center h-full p-4">
+      <div className="mb-4 md:mr-8">
         <img
           src={photoava}
           alt="photoava"
-          className="w-80 h-80 border-4 shadow-md"
+          className="w-full max-w-xs h-auto border-4 shadow-md"
         />
       </div>
       <div className="text-center text-xl font-nunito max-w-md">
