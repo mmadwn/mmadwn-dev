@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import photoava from "../assets/photoava.webp";
 import github from "../assets/github.png";
-import email from "../assets/email.png";
+import linkedin from "../assets/linkedin.png";
 
 function Home() {
   const textRef1 = useRef(null);
@@ -45,8 +45,8 @@ function Home() {
             </a>
           </div>
           <div>
-            <a href="mailto:ridwannn@gmail.com" target="_blank" rel="noopener noreferrer">
-              <img src={email} alt="email" className="w-10 h-10 transition-transform hover:scale-110" />
+            <a href="https://www.linkedin.com/in/mmadwn/" target="_blank" rel="noopener noreferrer">
+              <img src={linkedin} alt="linkedin" className="w-10 h-10 transition-transform hover:scale-110" />
             </a>
           </div>
         </div>
