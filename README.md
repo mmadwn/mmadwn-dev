@@ -1,8 +1,5 @@
-# Project Title
-React Portfolio
-
-## Description
-Simple React website to showcase my skills and experience.
+# React Portfolio
+This is a simple portfolio website built with React. It is a single-page application that allows users to view my skills, experience, and awards.
 
 ## Table of Contents
 - [Technologies Used](#technologies-used)
