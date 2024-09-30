@@ -1,18 +1,22 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import photoava from "../assets/photoava.webp";
+import github from "../assets/github.png";
+import email from "../assets/email.png";
 
 function Home() {
   const textRef1 = useRef(null);
   const textRef2 = useRef(null);
   const textRef3 = useRef(null);
+  const iconsRef = useRef(null);
 
   useEffect(() => {
     const tl = gsap.timeline();
 
     tl.to(textRef1.current, { opacity: 1, y: 0, duration: 0.5 })
       .to(textRef2.current, { opacity: 1, y: 0, duration: 0.5 }, "-=0.3")
-      .to(textRef3.current, { opacity: 1, y: 0, duration: 0.5 }, "-=0.3");
+      .to(textRef3.current, { opacity: 1, y: 0, duration: 0.5 }, "-=0.3")
+      .to(iconsRef.current, { opacity: 1, y: 0, duration: 0.5 }, "-=0.3");
   }, []);
 
   return (
@@ -34,6 +38,18 @@ function Home() {
         <p ref={textRef3} className="mt-2 opacity-0 translate-y-5 transition-opacity duration-500">
           Explore more about me in the About section!
         </p>
+        <div ref={iconsRef} className="flex justify-center space-x-4 mt-4 opacity-0 translate-y-5">
+          <div>
+            <a href="https://github.com/ridwannn" target="_blank" rel="noopener noreferrer">
+              <img src={github} alt="github" className="w-10 h-10 transition-transform hover:scale-110" />
+            </a>
+          </div>
+          <div>
+            <a href="mailto:ridwannn@gmail.com" target="_blank" rel="noopener noreferrer">
+              <img src={email} alt="email" className="w-10 h-10 transition-transform hover:scale-110" />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

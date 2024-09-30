@@ -1,3 +1,8 @@
+import company1 from "../assets/company-a.jpg";
+import company2 from "../assets/company-b.jpg";
+import company3 from "../assets/company-c.jpg";
+import company4 from "../assets/company-d.jpg";
+
 function Experience() {
   return (
     <div className="flex flex-col items-center justify-center h-full">
@@ -5,7 +10,7 @@ function Experience() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-2 max-w-5xl">
         <div className="p-3 rounded-lg shadow-sm relative">
           <div className="mb-2 ml-4">
-            <img src="https://i.pinimg.com/564x/2f/41/05/2f41055529bfd42b5118e428101ae41e.jpg" alt="Company Logo" className="w-16 h-16 object-cover rounded-full mx-auto" />
+            <img src={company1} alt="Company Logo" className="w-16 h-16 object-cover rounded-full mx-auto" />
           </div>
           <div className="text-center ml-4">
             <h2 className="text-base font-semibold mb-1">Software Developer</h2>
@@ -17,7 +22,7 @@ function Experience() {
         <div className="p-3 rounded-lg shadow-sm relative">
           <div className="absolute left-0 top-0 bottom-0 w-1 bg-white shadow-sm"></div>
           <div className="mb-2 ml-4">
-            <img src="https://i.pinimg.com/564x/b2/59/df/b259dffe7f99299f276f4c2cdb2687c4.jpg" alt="Company Logo" className="w-16 h-16 object-cover rounded-full mx-auto" />
+            <img src={company2} alt="Company Logo" className="w-16 h-16 object-cover rounded-full mx-auto" />
           </div>
           <div className="text-center ml-4">
             <h2 className="text-base font-semibold mb-1">Junior Web Developer</h2>
@@ -29,7 +34,7 @@ function Experience() {
         <div className="p-3 rounded-lg shadow-sm relative">
           <div className="absolute left-0 top-0 bottom-0 w-1 bg-white shadow-sm"></div>
           <div className="mb-2 ml-4">
-            <img src="https://i.pinimg.com/564x/a4/79/7a/a4797af73f5828cdc1a0bfbea8a7cd0a.jpg" alt="Company Logo" className="w-16 h-16 object-cover rounded-full mx-auto" />
+            <img src={company3} alt="Company Logo" className="w-16 h-16 object-cover rounded-full mx-auto" />
           </div>
           <div className="text-center ml-4">
             <h2 className="text-base font-semibold mb-1">Frontend Intern</h2>
@@ -41,7 +46,7 @@ function Experience() {
         <div className="p-3 rounded-lg shadow-sm relative">
           <div className="absolute left-0 top-0 bottom-0 w-1 bg-white shadow-sm"></div>
           <div className="mb-2 ml-4">
-            <img src="https://i.pinimg.com/564x/9b/b5/bc/9bb5bc35dc903ccb440ec9eb9df46204.jpg" alt="Company Logo" className="w-16 h-16 object-cover rounded-full mx-auto" />
+            <img src={company4} alt="Company Logo" className="w-16 h-16 object-cover rounded-full mx-auto" />
           </div>
           <div className="text-center ml-4">
             <h2 className="text-base font-semibold mb-1">IT Support Assistant</h2>
